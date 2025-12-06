@@ -1,0 +1,28 @@
+<div class="container">
+   <div class="row">
+    <div class="col-3">
+     <?php  include "views/admin/sidebar.php"; ?>
+    </div>
+    <div class="col-9">
+        <form action="<?= BASE_URL ?>?action=admin-create-providers" method="POST">
+            <div class="md-4">
+                <label for="">Tên nhà cung cấp</label>
+                <input type="text" class="form-control" name="name">
+            </div>
+                        <div class="md-4">
+                <label for="">Loại</label>
+                <input type="text" class="form-control" name="type">
+            </div>
+                                    <div class="md-4">
+                <label for="">Thông tin liên hệ</label>
+                <input type="text" class="form-control" name="contact">
+            </div>
+            <div class="md-4">
+    <label for="">Địa chỉ</label>
+    <input type="text" class="form-control" name="address">
+</div>
+            <button class="btn btn-primary btn-sm">thêm mới</button>
+        </form>
+    </div>
+   </div>
+</div>
